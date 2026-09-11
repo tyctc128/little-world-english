@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#176f67"><meta name="description" content="Pack your bag, learn simple English, and fly to 15 cities. A world travel game for young learners.">
+  <title>Little World · Pack, fly & explore!</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23176f67'/%3E%3Ctext x='9' y='47' font-size='44'%3E✈%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tablet.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon">✈</span><span>little world<span class="brand-small">BIG ADVENTURES, LITTLE EXPLORERS</span></span></a><div class="top-actions"><button id="sound" class="quiet" aria-pressed="true">♫ Sound on</button><button id="passport" class="quiet">▧ My passport <span id="stamp-count">0 / 15</span></button></div></header>
+  <main>
+    <nav class="steps" aria-label="Your trip"><span class="step active" data-step="choose"><b>1</b> Pick a city</span><span class="step" data-step="pack"><b>2</b> Pack your bag</span><span class="step" data-step="fly"><b>3</b> Let's fly!</span></nav>
+    <section id="choose-screen">
+      <div class="page-title"><div><p class="eyebrow">YOUR NEXT LITTLE ADVENTURE</p><h1>Where shall we go?</h1><p>Pick a city. Check the weather. Pack your bag!</p></div><button id="random" class="random">⚄ Surprise me!</button></div>
+      <label class="city-picker">Choose a city <select id="city-select" aria-label="Choose a city"></select></label>
+      <div class="travel-layout"><section class="map-card" aria-label="World map"><div class="map-top"><span>✧ Explore the world</span><span>15 cities · 6 continents</span></div><div id="world-map" class="world-map"><img class="map-art" src="./assets/world-map.webp" alt="An illustrated world map with green continents and blue oceans"><div id="markers"></div><svg id="flight-route" viewBox="0 0 1000 500" aria-hidden="true"><path id="route-path"/></svg><img id="plane" src="./assets/plane.png" alt="Your student pilot in a little airplane" hidden></div><div class="map-bottom"><span><i></i> Pick a pin to explore</span><span id="current-location">⌂ Starting in Taipei</span></div></section><aside id="destination" class="destination"></aside></div>
+      <section class="city-strip"><div><p class="eyebrow">SO MANY PLACES TO SAY HELLO</p><h2>Find your next stop</h2></div><div id="city-list" class="city-list"></div></section>
+    </section>
+    <section id="pack-screen" hidden></section>
+    <section id="arrival-screen" hidden></section>
+    <div class="voice-bar"><span class="voice-symbol">♫</span><div><span class="eyebrow">LISTEN & SAY IT</span><p id="spoken-text" aria-live="polite">Hello, explorer! Where shall we go?</p></div><button id="repeat" class="quiet" aria-label="Listen again">↻ Listen again</button></div>
+    <p id="speech-status" class="speech-status" role="status"></p>
+  </main>
+  <footer><span>little world · English through adventure</span><span>Practice weather · Made for young explorers</span><button id="teacher" class="text-button">教師說明</button></footer>
+  <dialog id="modal"><button id="close-modal" class="close" aria-label="Close">×</button><div id="modal-content"></div></dialog>
+  <script type="module" src="./app.js"></script>
+</body></html>
