@@ -1,0 +1,64 @@
+/* iPad-first controls, with native touch scrolling and no hover dependency. */
+button, select { touch-action: manipulation; }
+button:not(.pin), select { min-height: 44px; }
+.speaker,.close { min-width:44px; flex-shrink:0; }
+.clothing { -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
+.clothing img { pointer-events:none; }
+.city-picker { display:flex;align-items:center;gap:12px;margin:0 0 16px;font-size:16px;font-weight:700; }
+.city-picker select { flex:1;max-width:320px;min-width:0;padding:10px 36px 10px 14px;border:1px solid #b4cbb9;border-radius:12px;background:#fffdf7;color:var(--ink);font-size:16px; }
+body { padding-bottom:env(safe-area-inset-bottom); }
+.map-card { -webkit-overflow-scrolling:touch; }
+@media (min-width:721px) and (max-width:1366px) {
+  main { padding:18px 24px 0; }
+  .topbar { height:76px;padding:0 24px; }
+  .steps { margin-bottom:20px;gap:36px; }
+  .page-title { margin-bottom:16px; }
+  h1 { font-size:34px;margin:5px 0 8px; }
+  .travel-layout { grid-template-columns:minmax(0,1fr) 270px;gap:18px; }
+  .destination-body { padding:14px; }
+  .destination-title h2 { font-size:26px; }
+  .destination-image { height:120px; }
+  .country-line,.weather-desc,.mini-note { font-size:13px; }
+  .weather-day { font-size:14px;padding:8px 12px; }
+  .city-list { flex-wrap:wrap;overflow:visible;gap:8px; }
+  .city-chip { font-size:14px;min-height:44px; }
+  .city-strip { margin-top:18px; }
+  .pack-layout { grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:start; }
+  .closet { padding:16px; }
+  .clothes-grid { gap:8px; }
+  .clothing { font-size:14px;min-height:100px; }
+  .clothing img { width:62px;height:62px; }
+  .packing-needs { font-size:14px;margin:8px 0 12px; }
+  .bag-panel { padding:4px;position:sticky;top:16px; }
+  .suitcase { padding:12px;min-height:255px; }
+  .bag-items { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .bag-items .clothing { font-size:13px; }
+  .feedback { font-size:16px;margin:18px 0 12px; }
+  .primary,.quiet { font-size:16px; }
+  .voice-bar { margin-top:18px; }
+  .voice-bar .quiet { font-size:14px; }
+  .voice-bar p { font-size:16px; }
+  .arrival-scene { height:270px; }
+  .arrival-copy { padding:20px; }
+}
+@media (min-width:721px) and (max-width:950px) {
+  .travel-layout { grid-template-columns:1fr; }
+  .destination { display:grid;grid-template-columns:42% minmax(0,1fr); }
+  .destination-image { height:100%;min-height:240px; }
+  .destination-body { padding:16px; }
+  .clothes-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .pin-label { font-size:12px; }
+}
+@media (pointer:coarse) {
+  .pin { width:34px;height:34px; }
+  .pin-label { top:33px; }
+  .pin.label-up .pin-label { bottom:33px; }
+  .pin.label-left .pin-label { right:32px;top:8px; }
+  .pin.label-right .pin-label { left:32px;top:8px; }
+}
+@media (max-width:720px) {
+  .city-picker { flex-wrap:wrap;gap:8px; }
+  .city-picker select { max-width:none; }
+}
+
+.flight-mode .city-picker { display:none; }

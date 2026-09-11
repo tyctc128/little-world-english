@@ -1,0 +1,17 @@
+{
+  "visual_model": "layered_raster",
+  "runtime_object_model": "interactive_entities",
+  "collision_model": "none",
+  "engine_target": "project-native HTML/CSS/SVG",
+  "art_style": "clean_hd",
+  "visual_asset_source": "image_gen",
+  "layers": [
+    {"id": "terrain", "image": "dist/assets/world-map.webp", "projection": "illustrated world, normalized 0-100 coordinates"},
+    {"id": "city-zones", "source": "dist/data.js", "entities": "cities", "coordinates": ["x", "y"], "interaction": "choose destination"},
+    {"id": "route", "source": "dist/app.js", "geometry": "quadratic Bezier", "viewBox": [0, 0, 1000, 500]},
+    {"id": "student-plane", "image": "dist/assets/plane.png", "anchor": "center", "movement": "requestAnimationFrame along route"}
+  ],
+  "spawn": "taipei",
+  "arrival": "selected city triggers scenery and passport stamp",
+  "note": "Navigation scene, no walking or collidable environment props; geographical metadata is separate from artist-adjusted marker positions."
+}
