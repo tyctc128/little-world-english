@@ -17,4 +17,4 @@
 - English speech is invoked on player actions with captions and replay; audible playback depends on installed English voices and device sound. No audio recording used for QA.
 - Sprite processor: plane and clothes have alpha; no cell-edge touches. City atlas cropped at observed boundaries, not stretched.
 - Optional read-only WebMCP state tool is feature detected. A supported tool-calling context was unavailable, so WebMCP execution validation was not performed.
-- GitHub Pages: pending authentication to tyctc128; no public deployment claimed.
+- GitHub: source pushed to tyctc128/little-world-english main; GitHub Pages configured to publish gh-pages at https://tyctc128.github.io/little-world-english/.

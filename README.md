@@ -6,7 +6,7 @@
 
 起飛按鈕啟動 Web Audio 合成的螺旋槳與風聲，音量漸入漸出；Sound off 同時關閉語音與音效。降落、切換到背景或離開頁面會停止引擎。依 [MDN Web Audio best practices](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices)，在使用者點按時建立或恢復 AudioContext，適應行動裝置的音訊限制。
 
-同 Wi-Fi 試玩需以電腦 LAN IP 啟動伺服器，例如 `python -m http.server 4174 --bind <電腦的IPv4> --directory dist`，iPad Safari 開啟 `http://<電腦的IPv4>:4174/`。127.0.0.1 只指向當下使用的裝置，不能從 iPad 連到電腦。電腦須保持開機；網路需允許裝置互連。未發佈至 GitHub Pages。
+同 Wi-Fi 試玩需以電腦 LAN IP 啟動伺服器，例如 `python -m http.server 4174 --bind <電腦的IPv4> --directory dist`，iPad Safari 開啟 `http://<電腦的IPv4>:4174/`。127.0.0.1 只指向當下使用的裝置，不能從 iPad 連到電腦。電腦須保持開機；網路需允許裝置互連。正式網站：https://tyctc128.github.io/little-world-english/ 。
 
 國小四年級英文旅行遊戲。15 座都市、45 組教學天氣、12 件衣物、即時打包回饋、學生公仔飛行、城市風景及本機護照章。
 
@@ -34,6 +34,8 @@
 
 ## GitHub Pages
 
-將 `dist/` 的全部內容（包含 `.nojekyll`、JS、CSS、assets）放到公開儲存庫 `main` 根目錄；Settings → Pages → Deploy from a branch → main / (root)。也可以推送完整開發專案並用隨附 `.github/workflows/pages.yml` 發佈 `dist/`。
+正式網址：https://tyctc128.github.io/little-world-english/
+
+原始碼存於 `main`；網站由 `gh-pages` 分支根目錄發佈。更新遊戲後先執行 `npm test` 並提交變更，再執行 `git subtree split --prefix dist -b pages-release`、`git push origin main pages-release:gh-pages`、`git branch -D pages-release`。此方式不需要額外 workflow 授權。`docs/pages-workflow.example.yml` 保留可選的 GitHub Actions 範例（目前未啟用）。
 
 官方說明：[GitHub Pages publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)、[MDN SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)。
