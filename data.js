@@ -1,5 +1,5 @@
-import {project} from './geography.js';
-// Pins are derived from geographic coordinates, never hand-positioned.
+import {illustratedPosition} from './map-anchors.js';
+// Original artwork: calibrated visual anchors are shared by pins and flights.
 export const cities = [
  {id:'reykjavik',name:'Reykjavík',say:'Reykjavik',country:'Iceland',lat:64.15,lon:-21.94,flag:'is',label:'up',weather:[[-2,'snowy'],[5,'windy'],[11,'cloudy']],landmark:'Look at the colorful houses!'},
  {id:'london',name:'London',country:'United Kingdom',lat:51.51,lon:-.13,flag:'gb',label:'left',weather:[[12,'rainy'],[17,'cloudy'],[22,'sunny']],landmark:'Look! A big clock and a red bus!'},
@@ -16,7 +16,7 @@ export const cities = [
  {id:'cape-town',name:'Cape Town',country:'South Africa',lat:-33.92,lon:18.42,flag:'za',weather:[[16,'windy'],[24,'sunny'],[11,'rainy']],landmark:'Look! The mountain is flat on top!'},
  {id:'sydney',name:'Sydney',country:'Australia',lat:-33.87,lon:151.21,flag:'au',weather:[[23,'sunny'],[14,'windy'],[18,'rainy']],landmark:'Look at the Opera House by the water!'},
  {id:'buenos-aires',name:'Buenos Aires',country:'Argentina',lat:-34.6,lon:-58.38,flag:'ar',label:'left',weather:[[15,'cloudy'],[27,'sunny'],[9,'rainy']],landmark:'Look at the colorful houses and the tall tower!'}
-].map(city=>{const p=project(city.lon,city.lat);return {...city,x:p.x/10,y:p.y/5};});
+].map(city=>({...city,...illustratedPosition(city.id)}));
 export const clothes = [
  {id:'t-shirt',name:'T-shirt',type:'top'}, {id:'sweater',name:'sweater',type:'warm'}, {id:'coat',name:'coat',type:'coat'}, {id:'shorts',name:'shorts',type:'bottom'},
  {id:'pants',name:'pants',type:'bottom'}, {id:'shoes',name:'shoes',type:'feet'}, {id:'boots',name:'boots',type:'feet'}, {id:'hat',name:'hat',type:'sun'},

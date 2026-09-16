@@ -1,9 +1,10 @@
-// Equirectangular projection, shared by coastline, pins and flight animation.
+// Geographic projection retained for rebuilding the optional vector map.
 export function project(lon, lat) {
   return {x:(lon+180)/360*1000, y:(90-lat)/180*500};
 }
 export function flightRoute(from, to) {
-  const start=project(from.lon,from.lat), end=project(to.lon,to.lat);
+  // Use the same illustrated-map positions as the visible city pins.
+  const start={x:from.x*10,y:from.y*5}, end={x:to.x*10,y:to.y*5};
   // A local sightseeing loop starts and ends at the actual city.
   const same=from.id===to.id;
   const c1=same?{x:start.x-65,y:start.y-65}:{x:(start.x+end.x)/2,y:Math.max(8,Math.min(start.y,end.y)-Math.max(35,Math.abs(end.x-start.x)*.18))};
