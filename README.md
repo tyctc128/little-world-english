@@ -18,13 +18,13 @@
 
 ## 遊戲流程
 
-選地圖城市或 Surprise me → 看 Practice day 天氣 → Let's pack → 點擊或拖衣物到行李箱 → Check my bag → Let's fly → 抵達城市、取得章 → Next adventure。每次從上一個抵達城市出發，首次從臺北出發。選擇目前城市時會從該城市起飛、繞行並返回原點。
+選地圖城市或 Surprise me → 看每日預報或 Practice weather → Let's pack → 點擊或拖衣物到行李箱 → Check my bag → Let's fly → 抵達城市、取得章 → Next adventure。每次從上一個抵達城市出發，首次從臺北出發。選擇目前城市時會從該城市起飛、繞行並返回原點。
 
 所有主要步驟、物品、錯誤提示、目的地與景物句子使用瀏覽器英文合成語音（0.8 倍語速），另有字幕與重播按鈕。第一次使用須點擊頁面才可啟用瀏覽器聲音。需裝置有英文語音。字體離線時會自動使用系統字型。護照章儲存在 localStorage，無後端、不收學生姓名。
 
 ## 教學天氣與規則
 
-本遊戲是教學模擬，**不是即時天氣預報**。每城市三組情境，可用 Practice day 切換。地圖恢復原本手繪插畫；map-anchors.js 保存依照插畫海岸線校準的城市位置，城市標記與飛機起降點共用這組座標。真實經緯度保留作城市資訊；插畫不是等比例地理投影。航線弧線為教學動畫，不代表實際航班或最短航路。
+預設使用 Open-Meteo **每日天氣預報，非即時實測**。網站只讀同源 weather.json，學生不直接呼叫氣象 API。每個城市依其 IANA 時區選當地今天的預報，衣物依四捨五入的每日平均溫度與簡化天氣判斷；雪、雨優先於風，無雨雪且最大風速 ≥30 km/h 時為 windy。顯示低溫、高溫與降雨機率供參考。每回合開始固定天氣。另可選 Practice weather，使用每城市三組教學情境。地圖恢復原本手繪插畫；map-anchors.js 保存依照插畫海岸線校準的城市位置，城市標記與飛機起降點共用這組座標。真實經緯度保留作城市資訊；插畫不是等比例地理投影。航線弧線為教學動畫，不代表實際航班或最短航路。
 
 基本衣物：T-shirt 或 sweater；pants 或 shorts；shoes 或 boots。≤10°C 要 coat、不能帶 shorts；≤0°C 還要 gloves；11–19°C 要 sweater 或 coat；≥25°C 不接受 coat、sweater、scarf、gloves。rainy 要 umbrella，snowy 要 boots，sunny 要 hat 或 sunglasses，windy 不接受 umbrella。其他適合的額外衣物可攜带，不強迫唯一答案。
 
@@ -36,6 +36,14 @@
 
 正式網址：https://tyctc128.github.io/little-world-english/
 
-原始碼存於 `main`；網站由 `gh-pages` 分支根目錄發佈。更新遊戲後先執行 `npm test` 並提交變更，再執行 `git subtree split --prefix dist -b pages-release`、`git push origin main pages-release:gh-pages`、`git branch -D pages-release`。此方式不需要額外 workflow 授權。`docs/pages-workflow.example.yml` 保留可選的 GitHub Actions 範例（目前未啟用）。
+原始碼與最後成功的天氣存於 `main`；Pages 使用 GitHub Actions 部署，不再使用 gh-pages 分支發布。
+
+工作流程：`.github/workflows/daily-weather.yml`，名稱 **Daily weather and Pages**。每天 UTC 22:17（下一天臺灣 06:17）執行；也可到 Actions 選該流程 → Run workflow → main 手動更新。修改網站原始碼並 push main 也會觸發。
+
+流程取得 15 城市各自當地今天起的 3 日預報，完整驗證後原子替換 `dist/weather.json`，提交資料並部署 `dist/`。無 API key、無額外伺服器。更新失敗會保留原始 weather.json，更新 weather-status.json、照常部署保留的資料，並將該次 workflow 標成失敗供老師查看。
+
+36 小時以上提示更新延遲；72 小時以上或當地今天不在預報內時，改用明確標示的教學情境。網站讀檔失敗時嘗試使用上次瀏覽器快取，同樣檢查期限並顯示提示，不會偽裝成新預報。GitHub 排程可能延遲；公開 repo 60 天無活動時可能停用，可從 Actions 重新啟用。每日成功提交資料亦留下維護紀錄。
+
+本機手動更新：`node scripts/update-weather.mjs`。資料來源與 CC BY 4.0 attribution：[Open-Meteo](https://open-meteo.com/)。
 
 官方說明：[GitHub Pages publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)、[MDN SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)。

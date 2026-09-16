@@ -65,3 +65,8 @@ body { padding-bottom:env(safe-area-inset-bottom); }
 .country-flag { display:inline-block;width:32px;height:24px;object-fit:contain;vertical-align:middle;border-radius:2px;box-shadow:0 0 0 1px #243f3d20;flex-shrink:0;margin-right:5px; }
 .passport-stamp .country-flag { display:block;width:48px;height:36px;margin:0 auto 10px; }
 .stamp .country-flag { width:40px;height:30px;margin:0 0 5px; }
+
+.forecast-heading {font-size:13px;font-weight:700;color:var(--green);margin:8px 0;}
+.forecast-note {font-size:12px;line-height:1.5;overflow-wrap:anywhere;}
+.forecast-note strong {color:#a24c26;}
+.weather-mode .weather-day {white-space:normal;text-align:left;}
