@@ -6,9 +6,9 @@
   "art_style": "clean_hd",
   "visual_asset_source": "image_gen",
   "layers": [
-    {"id": "terrain", "image": "dist/assets/world-map.svg", "projection": "equirectangular; longitude -180..180, latitude 90..-90; shared geography.js"},
+    {"id": "terrain", "image": "dist/assets/world-map.webp", "projection": "illustrated coastline; calibrated map-anchors.js positions shared by pins and flights"},
     {"id": "city-zones", "source": "dist/data.js", "entities": "cities", "coordinates": ["x", "y"], "interaction": "choose destination"},
-    {"id": "route", "source": "dist/app.js", "geometry": "quadratic Bezier", "viewBox": [0, 0, 1000, 500]},
+    {"id": "route", "source": "dist/app.js", "geometry": "cubic Bezier", "viewBox": [0, 0, 1000, 500]},
     {"id": "student-plane", "image": "dist/assets/plane.png", "anchor": "center", "movement": "requestAnimationFrame along route"}
   ],
   "spawn": "taipei",

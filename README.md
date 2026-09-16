@@ -24,7 +24,7 @@
 
 ## 教學天氣與規則
 
-本遊戲是教學模擬，**不是即時天氣預報**。每城市三組情境，可用 Practice day 切換。地圖使用 Natural Earth 1:50m 海岸線，等距圓柱投影涵蓋經度 -180～180、緯度 90～-90；底圖、城市標記與飛行起終點共用 geography.js 投影。航線弧線為教學動畫，不代表實際航班或最短航路。
+本遊戲是教學模擬，**不是即時天氣預報**。每城市三組情境，可用 Practice day 切換。地圖恢復原本手繪插畫；map-anchors.js 保存依照插畫海岸線校準的城市位置，城市標記與飛機起降點共用這組座標。真實經緯度保留作城市資訊；插畫不是等比例地理投影。航線弧線為教學動畫，不代表實際航班或最短航路。
 
 基本衣物：T-shirt 或 sweater；pants 或 shorts；shoes 或 boots。≤10°C 要 coat、不能帶 shorts；≤0°C 還要 gloves；11–19°C 要 sweater 或 coat；≥25°C 不接受 coat、sweater、scarf、gloves。rainy 要 umbrella，snowy 要 boots，sunny 要 hat 或 sunglasses，windy 不接受 umbrella。其他適合的額外衣物可攜带，不強迫唯一答案。
 

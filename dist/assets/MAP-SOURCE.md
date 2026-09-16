@@ -1,3 +1,8 @@
+Active map: world-map.webp, original image-generated illustration.
+City anchors: ../map-anchors.js. Pins and flights share these visual positions.
+The illustration is stylized and is not a geographic projection.
+
+Optional vector map (not displayed): world-map.svg
 Coastlines: Natural Earth 1:50m land, public domain.
 https://www.naturalearthdata.com/about/terms-of-use/
 Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_land.geojson
