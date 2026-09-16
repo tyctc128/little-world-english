@@ -1,4 +1,4 @@
-import {illustratedPosition} from './map-anchors.js';
+import {illustratedPosition} from './map-anchors.js?v=art3';
 // Original artwork: calibrated visual anchors are shared by pins and flights.
 export const cities = [
  {id:'reykjavik',name:'Reykjavík',say:'Reykjavik',country:'Iceland',lat:64.15,lon:-21.94,flag:'is',label:'up',weather:[[-2,'snowy'],[5,'windy'],[11,'cloudy']],landmark:'Look at the colorful houses!'},
