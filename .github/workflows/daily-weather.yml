@@ -1,0 +1,56 @@
+name: Daily weather and Pages
+on:
+  schedule:
+    - cron: '17 22 * * *' # 06:17 Asia/Taipei (UTC+8), next calendar day
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'dist/**'
+      - 'scripts/update-weather.mjs'
+      - 'tests/**'
+      - '.github/workflows/daily-weather.yml'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: daily-weather-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch and validate all city forecasts
+        run: node scripts/update-weather.mjs
+      - name: Test game and forecast logic
+        run: npm test
+      - name: Keep the last successful forecast in the repository
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/weather.json dist/weather-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update daily weather data"
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Report a failed weather refresh after preserving website availability
+        run: node --input-type=module -e "import fs from 'node:fs'; if (!JSON.parse(fs.readFileSync('dist/weather-status.json')).ok) process.exit(1);"
+
