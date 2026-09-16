@@ -25,5 +25,5 @@ test('15 distinct destinations have metadata, scenes and all garment assets',()=
  assert.ok(Math.max(...cities.map(c=>c.lat))-Math.min(...cities.map(c=>c.lat))>95);
  for(const c of cities){assert.ok(existsSync(`dist/assets/cities/${c.id}.webp`));assert.ok(c.x>0&&c.x<100&&c.y>0&&c.y<100);}
  for(const c of clothes)assert.ok(existsSync(`dist/assets/clothes/${c.id}.png`));
- assert.ok(existsSync('dist/assets/plane.png'));assert.ok(existsSync('dist/assets/world-map.webp'));
+ assert.ok(existsSync('dist/assets/plane.png'));assert.ok(existsSync('dist/assets/world-map.svg'));
 });

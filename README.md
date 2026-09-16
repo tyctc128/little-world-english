@@ -18,13 +18,13 @@
 
 ## 遊戲流程
 
-選地圖城市或 Surprise me → 看 Practice day 天氣 → Let's pack → 點擊或拖衣物到行李箱 → Check my bag → Let's fly → 抵達城市、取得章 → Next adventure。每次從上一個抵達城市出發，首次從臺北出發。選擇目前城市時會示範一小段當地降落航線。
+選地圖城市或 Surprise me → 看 Practice day 天氣 → Let's pack → 點擊或拖衣物到行李箱 → Check my bag → Let's fly → 抵達城市、取得章 → Next adventure。每次從上一個抵達城市出發，首次從臺北出發。選擇目前城市時會從該城市起飛、繞行並返回原點。
 
 所有主要步驟、物品、錯誤提示、目的地與景物句子使用瀏覽器英文合成語音（0.8 倍語速），另有字幕與重播按鈕。第一次使用須點擊頁面才可啟用瀏覽器聲音。需裝置有英文語音。字體離線時會自動使用系統字型。護照章儲存在 localStorage，無後端、不收學生姓名。
 
 ## 教學天氣與規則
 
-本遊戲是教學模擬，**不是即時天氣預報**。每城市三組情境，可用 Practice day 切換。纬度和經度只作地理資訊；AI 插圖的城市位置以獨立 x/y 校準，不應當作精確 GIS 地圖。
+本遊戲是教學模擬，**不是即時天氣預報**。每城市三組情境，可用 Practice day 切換。地圖使用 Natural Earth 1:50m 海岸線，等距圓柱投影涵蓋經度 -180～180、緯度 90～-90；底圖、城市標記與飛行起終點共用 geography.js 投影。航線弧線為教學動畫，不代表實際航班或最短航路。
 
 基本衣物：T-shirt 或 sweater；pants 或 shorts；shoes 或 boots。≤10°C 要 coat、不能帶 shorts；≤0°C 還要 gloves；11–19°C 要 sweater 或 coat；≥25°C 不接受 coat、sweater、scarf、gloves。rainy 要 umbrella，snowy 要 boots，sunny 要 hat 或 sunglasses，windy 不接受 umbrella。其他適合的額外衣物可攜带，不強迫唯一答案。
 
