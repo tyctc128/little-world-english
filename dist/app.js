@@ -1,7 +1,7 @@
-import {flightRoute,routePoint} from './geography.js?v=art2';
+import {flightRoute,routePoint} from './geography.js?v=art3';
 import {FlightAudio} from './flight-audio.js';
 const flightAudio = new FlightAudio();
-import {cities,clothes,weatherIcons,warmth,checkBag,itemProblem} from './data.js?v=art2';
+import {cities,clothes,weatherIcons,warmth,checkBag,itemProblem} from './data.js?v=art3';
 const $=s=>document.querySelector(s);
 const flagImage=c=>`<img class="country-flag" src="./assets/flags/${c.flag}.svg" alt="${c.country} flag" width="32" height="24">`;
 let selected=cities.find(c=>c.id==='paris'), current=cities.find(c=>c.id==='taipei'),day=0, stage='choose',bag=new Set(), sound=true,spoken='Hello, explorer! Where shall we go?',flying=false;
