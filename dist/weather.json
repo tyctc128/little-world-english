@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Open-Meteo",
   "sourceUrl": "https://open-meteo.com/",
-  "updatedAt": "2026-09-16T15:15:12.291Z",
+  "updatedAt": "2026-09-16T15:21:00.664Z",
   "cities": {
     "reykjavik": {
       "timezone": "Atlantic/Reykjavik",
@@ -53,7 +53,7 @@
           "low": 13.5,
           "high": 19.5,
           "rainChance": 31,
-          "wind": 15.5,
+          "wind": 14.8,
           "sky": "cloudy"
         },
         {
@@ -99,7 +99,7 @@
           "temperature": 17.7,
           "low": 14,
           "high": 22.4,
-          "rainChance": 23,
+          "rainChance": 38,
           "wind": 14.2,
           "sky": "cloudy"
         },
@@ -109,7 +109,7 @@
           "temperature": 17.6,
           "low": 12.6,
           "high": 22,
-          "rainChance": 23,
+          "rainChance": 18,
           "wind": 14.3,
           "sky": "cloudy"
         }
