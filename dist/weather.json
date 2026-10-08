@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Open-Meteo",
   "sourceUrl": "https://open-meteo.com/",
-  "updatedAt": "2026-10-07T01:30:58.149Z",
+  "updatedAt": "2026-10-08T01:54:15.408Z",
   "cities": {
     "reykjavik": {
       "timezone": "Atlantic/Reykjavik",
@@ -10,32 +10,32 @@
       "longitude": -21.94,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 3,
-          "temperature": 6.2,
-          "low": 4,
-          "high": 8.3,
-          "rainChance": 5,
-          "wind": 15.5,
-          "sky": "cloudy"
-        },
-        {
           "date": "2026-10-08",
-          "code": 63,
-          "temperature": 7.1,
-          "low": 5.8,
-          "high": 8.9,
+          "code": 61,
+          "temperature": 6.6,
+          "low": 5.3,
+          "high": 8.6,
           "rainChance": 100,
-          "wind": 45.7,
+          "wind": 43.9,
           "sky": "rainy"
         },
         {
           "date": "2026-10-09",
-          "code": 61,
-          "temperature": 6.7,
-          "low": 5,
-          "high": 8,
-          "rainChance": 53,
+          "code": 51,
+          "temperature": 7.1,
+          "low": 5.6,
+          "high": 7.9,
+          "rainChance": 69,
+          "wind": 20.5,
+          "sky": "rainy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 53,
+          "temperature": 6.4,
+          "low": 4.1,
+          "high": 8.1,
+          "rainChance": 50,
           "wind": 16.8,
           "sky": "rainy"
         }
@@ -47,34 +47,34 @@
       "longitude": -0.13,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 63,
-          "temperature": 14.5,
-          "low": 10.7,
-          "high": 17.8,
-          "rainChance": 100,
-          "wind": 21.2,
-          "sky": "rainy"
-        },
-        {
           "date": "2026-10-08",
           "code": 51,
-          "temperature": 11.5,
-          "low": 8.1,
-          "high": 15,
-          "rainChance": 2,
-          "wind": 17.6,
+          "temperature": 11.4,
+          "low": 8.3,
+          "high": 14.8,
+          "rainChance": 5,
+          "wind": 15.1,
           "sky": "rainy"
         },
         {
           "date": "2026-10-09",
-          "code": 55,
-          "temperature": 14.3,
-          "low": 10.3,
-          "high": 17.6,
-          "rainChance": 84,
-          "wind": 23,
+          "code": 53,
+          "temperature": 14.8,
+          "low": 10.7,
+          "high": 18,
+          "rainChance": 86,
+          "wind": 23.4,
           "sky": "rainy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 3,
+          "temperature": 11.9,
+          "low": 9.8,
+          "high": 14.3,
+          "rainChance": 12,
+          "wind": 21.2,
+          "sky": "cloudy"
         }
       ]
     },
@@ -84,33 +84,33 @@
       "longitude": 2.35,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 63,
-          "temperature": 16.4,
-          "low": 13.6,
-          "high": 20.2,
-          "rainChance": 93,
-          "wind": 19.6,
-          "sky": "rainy"
-        },
-        {
           "date": "2026-10-08",
           "code": 61,
-          "temperature": 13.1,
-          "low": 9.9,
+          "temperature": 13.3,
+          "low": 10.4,
           "high": 15.8,
-          "rainChance": 48,
-          "wind": 20.4,
+          "rainChance": 95,
+          "wind": 19.9,
           "sky": "rainy"
         },
         {
           "date": "2026-10-09",
+          "code": 61,
+          "temperature": 12,
+          "low": 9.1,
+          "high": 15.7,
+          "rainChance": 43,
+          "wind": 13.4,
+          "sky": "rainy"
+        },
+        {
+          "date": "2026-10-10",
           "code": 80,
-          "temperature": 12.7,
-          "low": 8.4,
-          "high": 17.2,
-          "rainChance": 50,
-          "wind": 16.4,
+          "temperature": 14.9,
+          "low": 12.2,
+          "high": 17.4,
+          "rainChance": 60,
+          "wind": 18.1,
           "sky": "rainy"
         }
       ]
@@ -121,33 +121,33 @@
       "longitude": -74.01,
       "days": [
         {
-          "date": "2026-10-06",
-          "code": 0,
-          "temperature": 12.5,
-          "low": 7.8,
-          "high": 18,
-          "rainChance": 0,
-          "wind": 21.8,
-          "sky": "sunny"
-        },
-        {
           "date": "2026-10-07",
           "code": 0,
-          "temperature": 13,
-          "low": 7.1,
-          "high": 19.1,
-          "rainChance": 1,
+          "temperature": 13.5,
+          "low": 7.2,
+          "high": 19.5,
+          "rainChance": 0,
           "wind": 19.5,
           "sky": "sunny"
         },
         {
           "date": "2026-10-08",
           "code": 3,
-          "temperature": 17.8,
-          "low": 12.6,
-          "high": 24,
-          "rainChance": 3,
-          "wind": 25.3,
+          "temperature": 17.6,
+          "low": 13,
+          "high": 24.8,
+          "rainChance": 2,
+          "wind": 25.6,
+          "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-09",
+          "code": 3,
+          "temperature": 15.7,
+          "low": 9.2,
+          "high": 21.3,
+          "rainChance": 0,
+          "wind": 22.2,
           "sky": "cloudy"
         }
       ]
@@ -158,33 +158,33 @@
       "longitude": 116.41,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 0,
-          "temperature": 19.7,
-          "low": 13.3,
-          "high": 25.7,
-          "rainChance": 0,
-          "wind": 11.2,
-          "sky": "sunny"
-        },
-        {
           "date": "2026-10-08",
           "code": 0,
-          "temperature": 19.5,
-          "low": 13.3,
-          "high": 24.9,
+          "temperature": 19.6,
+          "low": 13,
+          "high": 25,
           "rainChance": 0,
-          "wind": 9.3,
+          "wind": 8.5,
           "sky": "sunny"
         },
         {
           "date": "2026-10-09",
-          "code": 2,
-          "temperature": 19.7,
-          "low": 14.6,
-          "high": 25.3,
+          "code": 3,
+          "temperature": 19.8,
+          "low": 14.5,
+          "high": 25.5,
           "rainChance": 0,
-          "wind": 11.5,
+          "wind": 11.9,
+          "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 3,
+          "temperature": 21.3,
+          "low": 15.8,
+          "high": 27.4,
+          "rainChance": 0,
+          "wind": 9.7,
           "sky": "cloudy"
         }
       ]
@@ -195,33 +195,33 @@
       "longitude": 139.69,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 3,
-          "temperature": 20.5,
-          "low": 17.7,
-          "high": 25,
-          "rainChance": 2,
-          "wind": 9.3,
-          "sky": "cloudy"
-        },
-        {
           "date": "2026-10-08",
           "code": 1,
-          "temperature": 19.5,
-          "low": 15.7,
+          "temperature": 19.4,
+          "low": 15.3,
           "high": 24,
-          "rainChance": 0,
-          "wind": 5.1,
+          "rainChance": 4,
+          "wind": 5.2,
           "sky": "sunny"
         },
         {
           "date": "2026-10-09",
           "code": 0,
-          "temperature": 19.3,
-          "low": 14.4,
+          "temperature": 19.4,
+          "low": 14.9,
           "high": 24.5,
           "rainChance": 0,
-          "wind": 3.8,
+          "wind": 4.5,
+          "sky": "sunny"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 0,
+          "temperature": 19.4,
+          "low": 15,
+          "high": 24.4,
+          "rainChance": 0,
+          "wind": 5.5,
           "sky": "sunny"
         }
       ]
@@ -232,34 +232,34 @@
       "longitude": 121.57,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 3,
-          "temperature": 23.8,
-          "low": 21.9,
-          "high": 26,
-          "rainChance": 0,
-          "wind": 18.7,
-          "sky": "cloudy"
-        },
-        {
           "date": "2026-10-08",
           "code": 3,
-          "temperature": 24.1,
-          "low": 21.7,
-          "high": 27.7,
+          "temperature": 24.3,
+          "low": 21.8,
+          "high": 27.9,
           "rainChance": 0,
           "wind": 18.3,
           "sky": "cloudy"
         },
         {
           "date": "2026-10-09",
-          "code": 51,
+          "code": 3,
           "temperature": 24.7,
-          "low": 21.4,
-          "high": 27.4,
-          "rainChance": 16,
-          "wind": 18.6,
-          "sky": "rainy"
+          "low": 21.2,
+          "high": 29.1,
+          "rainChance": 6,
+          "wind": 16.8,
+          "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 3,
+          "temperature": 25.3,
+          "low": 23.3,
+          "high": 28.7,
+          "rainChance": 6,
+          "wind": 13.8,
+          "sky": "cloudy"
         }
       ]
     },
@@ -269,33 +269,33 @@
       "longitude": 31.24,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 2,
-          "temperature": 24.1,
-          "low": 18.2,
+          "date": "2026-10-08",
+          "code": 3,
+          "temperature": 24.3,
+          "low": 18.9,
           "high": 29.9,
           "rainChance": 0,
-          "wind": 13.9,
-          "sky": "cloudy"
-        },
-        {
-          "date": "2026-10-08",
-          "code": 2,
-          "temperature": 24.7,
-          "low": 19.4,
-          "high": 30.8,
-          "rainChance": 0,
-          "wind": 13.1,
+          "wind": 13.6,
           "sky": "cloudy"
         },
         {
           "date": "2026-10-09",
-          "code": 3,
-          "temperature": 24.8,
-          "low": 19.4,
-          "high": 30.7,
+          "code": 2,
+          "temperature": 24.5,
+          "low": 19,
+          "high": 30.2,
           "rainChance": 0,
-          "wind": 13.7,
+          "wind": 13.6,
+          "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 3,
+          "temperature": 24.3,
+          "low": 19.4,
+          "high": 29.8,
+          "rainChance": 0,
+          "wind": 13.6,
           "sky": "cloudy"
         }
       ]
@@ -306,33 +306,33 @@
       "longitude": 55.27,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 0,
-          "temperature": 33.5,
-          "low": 30.6,
-          "high": 37.7,
-          "rainChance": 0,
-          "wind": 17,
-          "sky": "sunny"
-        },
-        {
           "date": "2026-10-08",
           "code": 0,
-          "temperature": 33.5,
-          "low": 30.7,
-          "high": 37.7,
+          "temperature": 33.7,
+          "low": 30.6,
+          "high": 38.1,
           "rainChance": 0,
-          "wind": 14.1,
+          "wind": 14.6,
           "sky": "sunny"
         },
         {
           "date": "2026-10-09",
           "code": 0,
-          "temperature": 32.9,
-          "low": 30.5,
+          "temperature": 33.1,
+          "low": 31.1,
           "high": 37,
           "rainChance": 0,
-          "wind": 14.3,
+          "wind": 14.2,
+          "sky": "sunny"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 0,
+          "temperature": 32.4,
+          "low": 29.5,
+          "high": 36.6,
+          "rainChance": 0,
+          "wind": 15.5,
           "sky": "sunny"
         }
       ]
@@ -343,33 +343,33 @@
       "longitude": 103.82,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 80,
-          "temperature": 28.3,
-          "low": 24.3,
-          "high": 32.3,
-          "rainChance": 59,
-          "wind": 11.3,
-          "sky": "rainy"
-        },
-        {
           "date": "2026-10-08",
-          "code": 80,
-          "temperature": 27.6,
-          "low": 23.1,
-          "high": 32.7,
-          "rainChance": 63,
-          "wind": 11,
+          "code": 53,
+          "temperature": 28.3,
+          "low": 24.5,
+          "high": 33.1,
+          "rainChance": 78,
+          "wind": 8.5,
           "sky": "rainy"
         },
         {
           "date": "2026-10-09",
-          "code": 80,
-          "temperature": 27.3,
-          "low": 23.1,
-          "high": 32.2,
+          "code": 55,
+          "temperature": 27.6,
+          "low": 23.9,
+          "high": 33,
           "rainChance": 84,
-          "wind": 9.1,
+          "wind": 6.2,
+          "sky": "rainy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 81,
+          "temperature": 26.5,
+          "low": 23.9,
+          "high": 30.5,
+          "rainChance": 97,
+          "wind": 9.9,
           "sky": "rainy"
         }
       ]
@@ -380,33 +380,33 @@
       "longitude": 36.82,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 53,
-          "temperature": 19.2,
-          "low": 16.3,
-          "high": 24.9,
-          "rainChance": 100,
-          "wind": 18.4,
-          "sky": "rainy"
-        },
-        {
           "date": "2026-10-08",
-          "code": 80,
-          "temperature": 19.6,
-          "low": 16.3,
-          "high": 25.3,
-          "rainChance": 96,
-          "wind": 18,
+          "code": 53,
+          "temperature": 19.9,
+          "low": 16.8,
+          "high": 26.8,
+          "rainChance": 98,
+          "wind": 18.5,
           "sky": "rainy"
         },
         {
           "date": "2026-10-09",
           "code": 81,
-          "temperature": 19.4,
-          "low": 16.3,
-          "high": 26.3,
-          "rainChance": 98,
-          "wind": 18.4,
+          "temperature": 19.6,
+          "low": 15.8,
+          "high": 26.8,
+          "rainChance": 100,
+          "wind": 21.1,
+          "sky": "rainy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 95,
+          "temperature": 18.8,
+          "low": 15.8,
+          "high": 25.1,
+          "rainChance": 100,
+          "wind": 17.1,
           "sky": "rainy"
         }
       ]
@@ -417,34 +417,34 @@
       "longitude": -43.17,
       "days": [
         {
-          "date": "2026-10-06",
-          "code": 55,
-          "temperature": 22.8,
-          "low": 21.1,
-          "high": 25.5,
-          "rainChance": 96,
-          "wind": 14,
-          "sky": "rainy"
-        },
-        {
           "date": "2026-10-07",
           "code": 80,
-          "temperature": 23.4,
-          "low": 21.7,
-          "high": 27.1,
-          "rainChance": 91,
-          "wind": 17.3,
+          "temperature": 23.3,
+          "low": 22,
+          "high": 27.4,
+          "rainChance": 100,
+          "wind": 18.7,
           "sky": "rainy"
         },
         {
           "date": "2026-10-08",
-          "code": 51,
-          "temperature": 23.2,
-          "low": 22,
+          "code": 3,
+          "temperature": 22.5,
+          "low": 21,
           "high": 24.7,
-          "rainChance": 10,
-          "wind": 12.2,
-          "sky": "rainy"
+          "rainChance": 2,
+          "wind": 18.6,
+          "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-09",
+          "code": 3,
+          "temperature": 23.3,
+          "low": 20.5,
+          "high": 26.3,
+          "rainChance": 0,
+          "wind": 13.5,
+          "sky": "cloudy"
         }
       ]
     },
@@ -454,33 +454,33 @@
       "longitude": 18.42,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 3,
-          "temperature": 13.7,
-          "low": 8.9,
-          "high": 18.8,
-          "rainChance": 0,
-          "wind": 15.3,
-          "sky": "cloudy"
-        },
-        {
           "date": "2026-10-08",
           "code": 3,
-          "temperature": 14.1,
+          "temperature": 14,
           "low": 10.1,
-          "high": 17.5,
+          "high": 17.7,
           "rainChance": 0,
-          "wind": 13.1,
+          "wind": 13.5,
           "sky": "cloudy"
         },
         {
           "date": "2026-10-09",
           "code": 3,
-          "temperature": 15.7,
-          "low": 11.9,
-          "high": 19.4,
-          "rainChance": 12,
-          "wind": 14.2,
+          "temperature": 15.9,
+          "low": 12.1,
+          "high": 19.7,
+          "rainChance": 4,
+          "wind": 14.4,
+          "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 3,
+          "temperature": 19.3,
+          "low": 14.6,
+          "high": 27.2,
+          "rainChance": 0,
+          "wind": 15.5,
           "sky": "cloudy"
         }
       ]
@@ -491,34 +491,34 @@
       "longitude": 151.21,
       "days": [
         {
-          "date": "2026-10-07",
-          "code": 53,
-          "temperature": 15.5,
-          "low": 14.2,
-          "high": 16.7,
-          "rainChance": 94,
-          "wind": 29.4,
-          "sky": "rainy"
-        },
-        {
           "date": "2026-10-08",
           "code": 51,
-          "temperature": 14.8,
-          "low": 11.6,
+          "temperature": 15,
+          "low": 12.1,
           "high": 17.6,
-          "rainChance": 61,
-          "wind": 14.3,
+          "rainChance": 71,
+          "wind": 14.5,
           "sky": "rainy"
         },
         {
           "date": "2026-10-09",
-          "code": 3,
+          "code": 2,
           "temperature": 16.2,
-          "low": 10.5,
-          "high": 20.8,
+          "low": 10.6,
+          "high": 20.5,
           "rainChance": 0,
-          "wind": 16.8,
+          "wind": 19.7,
           "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-10",
+          "code": 81,
+          "temperature": 22.7,
+          "low": 15.7,
+          "high": 30.1,
+          "rainChance": 76,
+          "wind": 20.6,
+          "sky": "rainy"
         }
       ]
     },
@@ -528,33 +528,33 @@
       "longitude": -58.38,
       "days": [
         {
-          "date": "2026-10-06",
-          "code": 3,
-          "temperature": 16.7,
-          "low": 13.3,
-          "high": 19.7,
-          "rainChance": 8,
-          "wind": 17.9,
-          "sky": "cloudy"
-        },
-        {
           "date": "2026-10-07",
           "code": 95,
-          "temperature": 16.5,
-          "low": 15.4,
-          "high": 17.2,
+          "temperature": 17.3,
+          "low": 15.8,
+          "high": 19.1,
           "rainChance": 100,
-          "wind": 22.3,
+          "wind": 20.4,
           "sky": "rainy"
         },
         {
           "date": "2026-10-08",
-          "code": 53,
-          "temperature": 16.3,
-          "low": 14.4,
-          "high": 18.8,
-          "rainChance": 43,
-          "wind": 16.5,
+          "code": 3,
+          "temperature": 15.8,
+          "low": 13.4,
+          "high": 19.1,
+          "rainChance": 33,
+          "wind": 21,
+          "sky": "cloudy"
+        },
+        {
+          "date": "2026-10-09",
+          "code": 51,
+          "temperature": 14.3,
+          "low": 12.3,
+          "high": 16.9,
+          "rainChance": 46,
+          "wind": 18.9,
           "sky": "rainy"
         }
       ]
